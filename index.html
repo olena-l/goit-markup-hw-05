@@ -582,14 +582,14 @@
             <label class="subscribe-label">
               <input
                 class="subscribe-field"
-                type="text"
+                type="email"
                 name="subscribe-caption"
                 placeholder="E-mail"
               />
             </label>
-            <button class="subscribe-button" type="button">
+            <button class="subscribe-button" type="submit">
               Subscribe
-              <svg class="send-icon" width="24" height="20">
+              <svg class="send-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -599,7 +599,7 @@
     </footer>
     <div class="backdrop is-open">
       <div class="modal">
-        <button class="button-close">
+        <button class="button-close" type="button">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
@@ -649,11 +649,11 @@
             </div>
           </div>
           <div class="modal-form-field-comment">
-            <label class="modal-form-label" for="comment">Comment </label>
+            <label class="modal-form-label" for="user-comment">Comment </label>
             <textarea
               class="modal-form-textarea"
-              id="comment"
-              name="comment"
+              id="user-comment"
+              name="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -661,10 +661,11 @@
             <input
               class="visually-hidden"
               type="checkbox"
-              name="user-agreement"
-              id="user-agreement"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
             />
-            <label class="modal-form-agreement-text" for="user-agreement">
+            <label class="modal-form-agreement-text" for="user-privacy">
               <span class="modal-form-checkbox">
                 <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
